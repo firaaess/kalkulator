@@ -1,44 +1,53 @@
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(assets/barca.png);
+background-size: cover;
 }
-.calculator{
+.calculator {
   padding: 20px;
-  background-color: gray;
-  border-radius: 10px;
+    border: 2px solid black;
+background-color: blue;
+    border-radius: 10px;
 }
-form input{
-  border: 0;
+form input {
+  border: 1 solid darkgray;
   outline: none;
- height: 60px;
- width: 60px;
+  height: 60px;
+  width: 60px;
   margin: 2px;
   font-weight: bolder;
   cursor: pointer;
   border-radius: 10px;
+  background-color: darkblue;
+  color: white;
 }
-form .display{
+form input[type='button']:hover{
+  background-color: rgb(248, 57, 57);
+}
+form .display {
   display: flex;
-justify-content: flex-end;
-margin: 5px 0px 15px 0px;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
 }
-form .display input{
- font-size: 40px;
- text-align: right;
- padding: 5px 10px ;
- flex: 1;
- font-weight: bolder;
- background-color: black;
- color: white;
+form .display input {
+  font-size: 40px;
+  text-align: right;
+  padding: 5px 10px;
+  flex: 1;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
 }
-form .equal{
+form .equal {
   width: 125px;
+  background-color: rgb(248, 57, 57);
 }
-.name{
+.name {
   font-size: 10px;
   font-family: sans-serif;
-color: white;
+  color: white;
 }
